@@ -87,7 +87,6 @@ class DBStorage:
         Session = scoped_session(session_fact)
         self.__session = Session(expire_on_commit=False)
 
-
     def close(self):
         """
         Remove method on the private session attribute
