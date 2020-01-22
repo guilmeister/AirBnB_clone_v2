@@ -10,7 +10,7 @@ app.strict_slashes = False
 
 
 @app.route('/')
-def index():
+def hello_flask():
     """
     Return desired string
     """
