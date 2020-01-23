@@ -21,7 +21,7 @@ class State(BaseModel, Base):
         @property
         def cities(self):
             city_list = []
-            for obj in models.storage.all(City):
+            for obj in models.storage.all(City).values():
                 if obj.state_id == self.id:
                     city_list.append(obj)
             return city_list
